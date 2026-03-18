@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .form-input:focus { border-color: #1152d4; ring-color: #1152d4; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen text-slate-900 dark:text-slate-100">
+<!-- Top Navigation Bar -->
+<header class="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl" style="">school</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white" style="">Scheduling Automation Program</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#" style="">Help Center</a>
+<button class="bg-primary/10 text-primary px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/20 transition-colors" style="">
+                        Sign In
+                    </button>
+<div class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+<img alt="User Profile" data-alt="Default user profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPLGg5NGCVFRSidPFDXIkJ7uS7AGcmiWMoLmf9Jis6Lmrg58glHaNT9ul4o_gVbl0kd0YH-kTOMFnFiNT_KlkBreyqjN2cM6CdQR-Beq8mxfyDZx4fgC2O-1x5uz33jbTLk9eWvgdICtA7vFwI8iAPRXbMOALqiYskMUkSnSSvB4CJKgaNoH2v0cDPQJODFUGIDNsmftoyslDMX08sglEUYpR4yIAWrY-wA5MvUJsVajD1F2R5Ykd-ujIIOPMPoF25x-kIYMyJonw" class="" style="">
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<!-- Main Registration Card -->
+<div class="bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+<!-- Progress Bar -->
+<div class="p-6 pb-0">
+<div class="flex justify-between items-end mb-2">
+<span class="text-primary font-bold text-sm" style="">Step 1 of 3</span>
+<span class="text-slate-400 text-xs font-medium" style="">33% Complete</span>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/3 rounded-full"></div>
+</div>
+</div>
+<!-- Content Header -->
+<div class="p-8 pb-4">
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-2" style="">Create School Account</h1>
+<p class="text-slate-500 dark:text-slate-400 text-base" style="">Get started by providing your administrator details and school information.</p>
+</div>
+<form class="p-8 pt-4 space-y-8">
+<!-- Administrator Details Section -->
+<section>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-xl" style="">person</span>
+<h2 class="text-lg font-bold text-slate-800 dark:text-slate-200" style="">Administrator Details</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">First Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="e.g. John" type="text">
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Last Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="e.g. Doe" type="text">
+</div>
+<div class="md:col-span-2 space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Email Address</label>
+<input class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="admin@school.edu" type="email">
+</div>
+</div>
+</section>
+<!-- School Information Section -->
+<section>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-xl" style="">domain</span>
+<h2 class="text-lg font-bold text-slate-800 dark:text-slate-200" style="">School Information</h2>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Official School Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="Enter full registered school name" type="text">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">School Type</label>
+<select class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all appearance-none">
+<option value="">Select Type</option>
+<option value="k12">K-12 Education</option>
+<option value="higher-ed">Higher Education</option>
+<option value="vocational">Vocational School</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300" style="">Region/State</label>
+<input class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all" placeholder="e.g. California" type="text">
+</div>
+</div>
+</div>
+</section>
+<!-- Action Footer -->
+<div class="pt-6 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 py-3 px-6 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" type="button" style="">
+                        Save Draft
+                    </button>
+<button class="flex-[2] py-3 px-6 rounded-lg bg-primary text-white font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/25" type="submit" style="">
+                        Continue to Schedule Setup
+                        <span class="material-symbols-outlined text-lg" style="">arrow_forward</span>
+</button>
+</div>
+<div class="text-center pt-4">
+<p class="text-sm text-slate-500" style="">
+                        Already have an account? <a class="text-primary font-semibold hover:underline" href="#" style="">Log in here</a>
+</p>
+</div>
+</form>
+</div>
+<!-- Features Columns -->
+<div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="space-y-3">
+<div class="mx-auto w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary" style="">verified_user</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white" style="">Secure Access</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed" style="">Enterprise-grade security ensuring all your school data is protected.</p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary" style="">bolt</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white" style="">Quick Setup</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed" style="">Automated onboarding workflow to get you scheduling in minutes.</p>
+</div>
+<div class="space-y-3">
+<div class="mx-auto w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-primary" style="">support_agent</span>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-white" style="">Expert Support</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed" style="">Dedicated success managers available 24/7 for technical assistance.</p>
+</div>
+</div>
+</main>
+<!-- Page Footer -->
+<footer class="w-full py-10 mt-12 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-slate-500 dark:text-slate-400 text-sm" style="">
+                © 2024 EduSched Inc. All rights reserved.
+            </div>
+<div class="flex gap-8">
+<a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#" style="">Terms of Service</a>
+<a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#" style="">Privacy Policy</a>
+<a class="text-sm text-slate-600 dark:text-slate-400 hover:text-primary transition-colors" href="#" style="">Compliance</a>
+</div>
+</div>
+</footer>
+</body></html>
